@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1552500117">
+  <File Type="PA-TCL" Name="SevenSegmentControlTop.tcl"/>
+  <File Type="RDS-RDS" Name="SevenSegmentControlTop.vds"/>
+  <File Type="RDS-UTIL" Name="SevenSegmentControlTop_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="SevenSegmentControlTop_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="SevenSegmentControlTop.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/SevenSegmentControl.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/ryancj14/Lab8_SevenSegmentController/Lab8_SevenSegmentController.srcs/sources_1/new/SevenSegmentControl.sv"/>
+        <Attr Name="ImportTime" Val="1552416485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SevenSegmentControlTop.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../ECEN 220 Labs/Lab8_SevenSegmentController/Lab8_SevenSegmentController.srcs/sources_1/new/SevenSegmentControlTop.sv"/>
+        <Attr Name="ImportTime" Val="1552500105"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ECEN 220 Labs/Lab8_SevenSegmentController/tb_sevensegmentcontrol.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="SevenSegmentControlTop"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/MasterConnect.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../ECEN 220 Labs/Lab8_SevenSegmentController/Lab8_SevenSegmentController.srcs/constrs_1/new/MasterConnect.xdc"/>
+        <Attr Name="ImportTime" Val="1552421034"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../SevenSegmentControl.sv" \
+"../../../../../project_2/project_2.srcs/sources_1/new/vga_timing.sv" \
+"../../../../project_3.srcs/sources_1/new/vga_object.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,10 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+===== RISCV DATAPATH TB V1.04 =====
+ Runs for 11180 ns or use run -all
+[0ns]Testing Reset
+[100ns]Testing x0
+[120ns]Loading Initial Values
+[1080ns]Testing 1000 random commands
+You Passed!
+$finish called at time : 11180 ns : File "J:/ECEN 323 Labs/project_6/datapath_tb.sv" Line 712

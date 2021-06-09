@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="riscv_pipeline_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="riscv_pipeline_tb" />
+            <top_module name="typePack" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="489279126fs"></ZoomStartTime>
+      <ZoomEndTime time="530720428fs"></ZoomEndTime>
+      <Cursor1Time time="510000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="126"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="46" />
+   <wvobject fp_name="/riscv_pipeline_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/tb_PC" type="array">
+      <obj_property name="ElementShortName">tb_PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/tb_ALUResult" type="array">
+      <obj_property name="ElementShortName">tb_ALUResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_ALUResult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/tb_Address" type="array">
+      <obj_property name="ElementShortName">tb_Address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_Address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/tb_dWriteData" type="array">
+      <obj_property name="ElementShortName">tb_dWriteData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_dWriteData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/tb_WriteBackData" type="array">
+      <obj_property name="ElementShortName">tb_WriteBackData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_WriteBackData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/tb_MemRead" type="logic">
+      <obj_property name="ElementShortName">tb_MemRead</obj_property>
+      <obj_property name="ObjectShortName">tb_MemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/tb_MemWrite" type="logic">
+      <obj_property name="ElementShortName">tb_MemWrite</obj_property>
+      <obj_property name="ObjectShortName">tb_MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/tb_dReadData" type="array">
+      <obj_property name="ElementShortName">tb_dReadData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_dReadData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/tb_instruction" type="array">
+      <obj_property name="ElementShortName">tb_instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/error_count" type="array">
+      <obj_property name="ElementShortName">error_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">error_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/instruction_memory" type="array">
+      <obj_property name="ElementShortName">instruction_memory[127:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_memory[127:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/data_memory" type="array">
+      <obj_property name="ElementShortName">data_memory[63:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_memory[63:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/local_dMem_Address" type="array">
+      <obj_property name="ElementShortName">local_dMem_Address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">local_dMem_Address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/valid_dMem_Address" type="logic">
+      <obj_property name="ElementShortName">valid_dMem_Address</obj_property>
+      <obj_property name="ObjectShortName">valid_dMem_Address</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/instruction_memory_filename" type="array">
+      <obj_property name="ElementShortName">instruction_memory_filename[167:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_memory_filename[167:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/data_memory_filename" type="array">
+      <obj_property name="ElementShortName">data_memory_filename[167:0]</obj_property>
+      <obj_property name="ObjectShortName">data_memory_filename[167:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/EBREAK_INSTRUCTION" type="array">
+      <obj_property name="ElementShortName">EBREAK_INSTRUCTION[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EBREAK_INSTRUCTION[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/TEXT_SEGMENT_START_ADDRESSS" type="array">
+      <obj_property name="ElementShortName">TEXT_SEGMENT_START_ADDRESSS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TEXT_SEGMENT_START_ADDRESSS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/INSTRUCTION_MEMORY_WORDS" type="array">
+      <obj_property name="ElementShortName">INSTRUCTION_MEMORY_WORDS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">INSTRUCTION_MEMORY_WORDS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/DATA_MEMORY_WORDS" type="array">
+      <obj_property name="ElementShortName">DATA_MEMORY_WORDS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_MEMORY_WORDS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/DATA_SEGMENT_START_ADDRESSS" type="array">
+      <obj_property name="ElementShortName">DATA_SEGMENT_START_ADDRESSS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_SEGMENT_START_ADDRESSS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/DATA_SEGMENT_END_ADDRESSS" type="array">
+      <obj_property name="ElementShortName">DATA_SEGMENT_END_ADDRESSS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_SEGMENT_END_ADDRESSS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/NOP_INSTRUCTION" type="array">
+      <obj_property name="ElementShortName">NOP_INSTRUCTION[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NOP_INSTRUCTION[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/MAX_INSTRUCTIONS" type="array">
+      <obj_property name="ElementShortName">MAX_INSTRUCTIONS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_INSTRUCTIONS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/wb_rd" type="array">
+      <obj_property name="ElementShortName">wb_rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/wb_RegWrite" type="logic">
+      <obj_property name="ElementShortName">wb_RegWrite</obj_property>
+      <obj_property name="ObjectShortName">wb_RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/wb_MemtoReg" type="logic">
+      <obj_property name="ElementShortName">wb_MemtoReg</obj_property>
+      <obj_property name="ObjectShortName">wb_MemtoReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/wb_read_data" type="array">
+      <obj_property name="ElementShortName">wb_read_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_read_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/wb_aluResult" type="array">
+      <obj_property name="ElementShortName">wb_aluResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_aluResult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/wb_WriteData" type="array">
+      <obj_property name="ElementShortName">wb_WriteData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_WriteData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/id_ALUCtrl" type="array">
+      <obj_property name="ElementShortName">id_ALUCtrl[3:0]</obj_property>
+      <obj_property name="ObjectShortName">id_ALUCtrl[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/ex_ALUCtrl" type="array">
+      <obj_property name="ElementShortName">ex_ALUCtrl[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_ALUCtrl[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/ex_data1" type="array">
+      <obj_property name="ElementShortName">ex_data1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_data1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/data2" type="array">
+      <obj_property name="ElementShortName">data2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/ex_ALUSrc" type="logic">
+      <obj_property name="ElementShortName">ex_ALUSrc</obj_property>
+      <obj_property name="ObjectShortName">ex_ALUSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/ex_aluResult" type="array">
+      <obj_property name="ElementShortName">ex_aluResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_aluResult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/funct3" type="array">
+      <obj_property name="ElementShortName">funct3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">funct3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/store" type="logic">
+      <obj_property name="ElementShortName">store</obj_property>
+      <obj_property name="ObjectShortName">store</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/load" type="logic">
+      <obj_property name="ElementShortName">load</obj_property>
+      <obj_property name="ObjectShortName">load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/branch" type="logic">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/riscv_pipeline_tb/riscv/itype" type="logic">
+      <obj_property name="ElementShortName">itype</obj_property>
+      <obj_property name="ObjectShortName">itype</obj_property>
+   </wvobject>
+</wave_config>

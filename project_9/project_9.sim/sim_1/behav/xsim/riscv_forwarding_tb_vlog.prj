@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../typepack.sv" \
+"../../../../riscv_forward_sim_model.sv" \
+"../../../../project_9.srcs/sources_1/new/riscv_forwarding_pipeline.sv" \
+"../../../../riscv_forwarding_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Mar 12 14:05:26 2019
+# Process ID: 6276
+# Current directory: J:/ECEN 220 Labs/Lab8_SevenSegmentController/Lab8_SevenSegmentController.runs/impl_1
+# Command line: vivado.exe -log SevenSegmentControlTop.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source SevenSegmentControlTop.tcl -notrace
+# Log file: J:/ECEN 220 Labs/Lab8_SevenSegmentController/Lab8_SevenSegmentController.runs/impl_1/SevenSegmentControlTop.vdi
+# Journal file: J:/ECEN 220 Labs/Lab8_SevenSegmentController/Lab8_SevenSegmentController.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source SevenSegmentControlTop.tcl -notrace

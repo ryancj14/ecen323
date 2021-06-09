@@ -1,0 +1,39 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+*** Start of Simulation ***
+*** Correct: 34e1cb0a X 786d4f31=18e06babf021f2ea received at time 535 ns
+*** Correct: 220e101a/000fdc1a=00000225 received at time 925 ns
+*** Correct: 220e101a/000fdc1a = remainder 000b0c58 received at time 925 ns
+*** Start of Simulation ***
+*** Correct: 34e1cb0a X 786d4f31=18e06babf021f2ea received at time 535 ns
+*** Correct: 220e101a/000fdc1a=00000225 received at time 925 ns
+*** Correct: 220e101a/000fdc1a = remainder 000b0c58 received at time 925 ns
+*** Correct: f4e1cb0a X 886d4f31=828083c15021f2ea received at time 1315 ns
+*** Correct: 8484d609/b1f05663=00000000 received at time 1705 ns
+*** Correct: 8484d609/b1f05663 = remainder 8484d609 received at time 1705 ns
+*** Correct: 12153524 X c0895e81=0d999be15676ff24 received at time 2095 ns
+*** Correct: b1f05663/0484d609=00000027 received at time 2485 ns
+*** Correct: b1f05663/0484d609 = remainder 01b3bb04 received at time 2485 ns
+*** Correct: 06b97b0d X 46df998d=01dc97404d068b29 received at time 2875 ns
+*** Correct: 89375212/32c28465=00000002 received at time 3265 ns
+*** Correct: 89375212/32c28465 = remainder 23b24948 received at time 3265 ns
+*** Correct: 00f3e301 X 06d7cd0d=000684e90501540d received at time 3655 ns
+*** Correct: 1e8dcd3d/3b23f176=00000000 received at time 4045 ns
+*** Correct: 1e8dcd3d/3b23f176 = remainder 1e8dcd3d received at time 4045 ns
+*** Correct: 76d457ed X 462df78c=209366461f9ec09c received at time 4435 ns
+*** Correct: e33724c6/3cfde9f9=00000003 received at time 4825 ns
+*** Correct: e33724c6/3cfde9f9 = remainder 2c3d66db received at time 4825 ns
+*** Correct: e2f784c5 X d513d2aa=bce9849c86e6c4d2 received at time 5215 ns
+*** Correct: bbd27277/32aff7e5=00000003 received at time 5605 ns
+*** Correct: bbd27277/32aff7e5 = remainder 23c28ac8 received at time 5605 ns
+*** Correct: 8932d612 X 47ecdb8f=268c09e7771efa0e received at time 5995 ns
+*** Correct: e77696ce/393069f2=00000004 received at time 6385 ns
+*** Correct: e77696ce/393069f2 = remainder 02b4ef06 received at time 6385 ns
+*** Correct: f4007ae8 X e2ca4ec5=d8293ff5b4e14488 received at time 6775 ns
+*** Correct: de8e28bd/2e58495c=00000004 received at time 7165 ns
+*** Correct: de8e28bd/2e58495c = remainder 252d034d received at time 7165 ns
+*** Correct: 96ab582d X b2a72665=692583aeb00b77c1 received at time 7555 ns
+*** Correct: 0573870a/31ef6263=00000000 received at time 7945 ns
+*** Correct: 0573870a/31ef6263 = remainder 0573870a received at time 7945 ns
+*** Simulation done with   0 errors *** 7995 ns
+$finish called at time : 7995 ns : File "J:/ECEN 323 Labs/project_5/tb_seq_multdiv.v" Line 204

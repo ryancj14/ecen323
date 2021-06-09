@@ -1,0 +1,1 @@
+-wto "617541cab61b42e3bfe1a6fbb8a27250" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "vga_test_behav" "xil_defaultlib.vga_test" "xil_defaultlib.glbl" -log "elaborate.log" 

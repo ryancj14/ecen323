@@ -1,0 +1,473 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+===== RISC-V Pipeline Simulation Model Version 1.2 =====
+**** RISC_V Simulation model: Loaded instruction memory 'pipeline_nop_inst.txt' ****
+**** RISC-V Simulation model: Loaded data memory 'pipeline_nop_data.txt' ****
+**** Testbench: Loaded instruction memory ****
+**** Testbench: Loaded data memory ****
+===== RISCV PIPELINE TESTBENCH V1.20 =====
+ use run -all
+25 ns:No Errors
+  IF: PC=0x00000000
+  ID: PC=0xxxxxxxxx I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0xxxxxxxxx I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0xxxxxxxxx I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0xxxxxxxxx I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+40 ns:No Errors
+  IF: PC=0x00000004
+  ID: PC=0x00000000 I=0x00100093 [addi x1,x0,0x1]
+  EX: PC=0xxxxxxxxx I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0xxxxxxxxx I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0xxxxxxxxx I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+50 ns:No Errors
+  IF: PC=0x00000008
+  ID: PC=0x00000004 I=0x00100113 [addi x2,x0,0x1]
+  EX: PC=0x00000000 I=0x00100093 [addi x1,x0,0x1] alu result=0x00000001 
+  MEM:PC=0xxxxxxxxx I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0xxxxxxxxx I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+60 ns:No Errors
+  IF: PC=0x0000000c
+  ID: PC=0x00000008 I=0x40000093 [addi x1,x0,0x400]
+  EX: PC=0x00000004 I=0x00100113 [addi x2,x0,0x1] alu result=0x00000001 
+  MEM:PC=0x00000000 I=0x00100093 [addi x1,x0,0x1] No memory read/write 
+  WB: PC=0xxxxxxxxx I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+70 ns:No Errors
+  IF: PC=0x00000010
+  ID: PC=0x0000000c I=0xfff00113 [addi x2,x0,0xffffffff]
+  EX: PC=0x00000008 I=0x40000093 [addi x1,x0,0x400] alu result=0x00000400 
+  MEM:PC=0x00000004 I=0x00100113 [addi x2,x0,0x1] No memory read/write 
+  WB: PC=0x00000000 I=0x00100093 [addi x1,x0,0x1] WriteBackData=0x00000001 
+80 ns:No Errors
+  IF: PC=0x00000014
+  ID: PC=0x00000010 I=0x0ff06193 [ori x3,x0,0xff]
+  EX: PC=0x0000000c I=0xfff00113 [addi x2,x0,0xffffffff] alu result=0xffffffff 
+  MEM:PC=0x00000008 I=0x40000093 [addi x1,x0,0x400] No memory read/write 
+  WB: PC=0x00000004 I=0x00100113 [addi x2,x0,0x1] WriteBackData=0x00000001 
+90 ns:No Errors
+  IF: PC=0x00000018
+  ID: PC=0x00000014 I=0x001080b3 [add x1,x1,x1]
+  EX: PC=0x00000010 I=0x0ff06193 [ori x3,x0,0xff] alu result=0x000000ff 
+  MEM:PC=0x0000000c I=0xfff00113 [addi x2,x0,0xffffffff] No memory read/write 
+  WB: PC=0x00000008 I=0x40000093 [addi x1,x0,0x400] WriteBackData=0x00000400 
+100 ns:No Errors
+  IF: PC=0x0000001c
+  ID: PC=0x00000018 I=0x0ff17293 [andi x5,x2,0xff]
+  EX: PC=0x00000014 I=0x001080b3 [add x1,x1,x1] alu result=0x00000800 
+  MEM:PC=0x00000010 I=0x0ff06193 [ori x3,x0,0xff] No memory read/write 
+  WB: PC=0x0000000c I=0xfff00113 [addi x2,x0,0xffffffff] WriteBackData=0xffffffff 
+110 ns:No Errors
+  IF: PC=0x00000020
+  ID: PC=0x0000001c I=0x40218233 [sub x4,x3,x2]
+  EX: PC=0x00000018 I=0x0ff17293 [andi x5,x2,0xff] alu result=0x000000ff 
+  MEM:PC=0x00000014 I=0x001080b3 [add x1,x1,x1] No memory read/write 
+  WB: PC=0x00000010 I=0x0ff06193 [ori x3,x0,0xff] WriteBackData=0x000000ff 
+120 ns:No Errors
+  IF: PC=0x00000024
+  ID: PC=0x00000020 I=0x001080b3 [add x1,x1,x1]
+  EX: PC=0x0000001c I=0x40218233 [sub x4,x3,x2] alu result=0x00000100 
+  MEM:PC=0x00000018 I=0x0ff17293 [andi x5,x2,0xff] No memory read/write 
+  WB: PC=0x00000014 I=0x001080b3 [add x1,x1,x1] WriteBackData=0x00000800 
+130 ns:No Errors
+  IF: PC=0x00000028
+  ID: PC=0x00000024 I=0x0fe1a313 [slti x6,x3,0xfe]
+  EX: PC=0x00000020 I=0x001080b3 [add x1,x1,x1] alu result=0x00001000 
+  MEM:PC=0x0000001c I=0x40218233 [sub x4,x3,x2] No memory read/write 
+  WB: PC=0x00000018 I=0x0ff17293 [andi x5,x2,0xff] WriteBackData=0x000000ff 
+140 ns:No Errors
+  IF: PC=0x0000002c
+  ID: PC=0x00000028 I=0x1011a393 [slti x7,x3,0x101]
+  EX: PC=0x00000024 I=0x0fe1a313 [slti x6,x3,0xfe] alu result=0x00000000 
+  MEM:PC=0x00000020 I=0x001080b3 [add x1,x1,x1] No memory read/write 
+  WB: PC=0x0000001c I=0x40218233 [sub x4,x3,x2] WriteBackData=0x00000100 
+150 ns:No Errors
+  IF: PC=0x00000030
+  ID: PC=0x0000002c I=0x00100013 [addi x0,x0,0x1]
+  EX: PC=0x00000028 I=0x1011a393 [slti x7,x3,0x101] alu result=0x00000001 
+  MEM:PC=0x00000024 I=0x0fe1a313 [slti x6,x3,0xfe] No memory read/write 
+  WB: PC=0x00000020 I=0x001080b3 [add x1,x1,x1] WriteBackData=0x00001000 
+160 ns:No Errors
+  IF: PC=0x00000034
+  ID: PC=0x00000030 I=0x05a14413 [xori x8,x2,0x5a]
+  EX: PC=0x0000002c I=0x00100013 [addi x0,x0,0x1] alu result=0x00000001 
+  MEM:PC=0x00000028 I=0x1011a393 [slti x7,x3,0x101] No memory read/write 
+  WB: PC=0x00000024 I=0x0fe1a313 [slti x6,x3,0xfe] WriteBackData=0x00000000 
+170 ns:No Errors
+  IF: PC=0x00000038
+  ID: PC=0x00000034 I=0x02100c63 [beq x0,x1,0x38]
+  EX: PC=0x00000030 I=0x05a14413 [xori x8,x2,0x5a] alu result=0xffffffa5 
+  MEM:PC=0x0000002c I=0x00100013 [addi x0,x0,0x1] No memory read/write 
+  WB: PC=0x00000028 I=0x1011a393 [slti x7,x3,0x101] WriteBackData=0x00000001 
+180 ns:No Errors
+  IF: PC=0x0000003c
+  ID: PC=0x00000038 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000034 I=0x02100c63 [beq x0,x1,0x38] alu result=0xfffff000 
+  MEM:PC=0x00000030 I=0x05a14413 [xori x8,x2,0x5a] No memory read/write 
+  WB: PC=0x0000002c I=0x00100013 [addi x0,x0,0x1] WriteBackData=0x00000001 
+190 ns:No Errors
+  IF: PC=0x00000040
+  ID: PC=0x0000003c I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000038 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000034 I=0x02100c63 [beq x0,x1,0x38] No memory read/write 
+  WB: PC=0x00000030 I=0x05a14413 [xori x8,x2,0x5a] WriteBackData=0xffffffa5 
+200 ns:No Errors
+  IF: PC=0x00000044
+  ID: PC=0x00000040 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x0000003c I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000038 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000034 I=0x02100c63 [beq x0,x1,0x38] WriteBackData=0xfffff000 
+210 ns:No Errors
+  IF: PC=0x00000048
+  ID: PC=0x00000044 I=0x000187b3 [add x15,x3,x0]
+  EX: PC=0x00000040 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x0000003c I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000038 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+220 ns:No Errors
+  IF: PC=0x0000004c
+  ID: PC=0x00000048 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000044 I=0x000187b3 [add x15,x3,x0] alu result=0x000000ff 
+  MEM:PC=0x00000040 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x0000003c I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+230 ns:No Errors
+  IF: PC=0x00000050
+  ID: PC=0x0000004c I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000048 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000044 I=0x000187b3 [add x15,x3,x0] No memory read/write 
+  WB: PC=0x00000040 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+240 ns:No Errors
+  IF: PC=0x00000054
+  ID: PC=0x00000050 I=0x00378e63 [beq x15,x3,0x1c]
+  EX: PC=0x0000004c I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000048 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000044 I=0x000187b3 [add x15,x3,x0] WriteBackData=0x000000ff 
+250 ns:No Errors
+  IF: PC=0x00000058
+  ID: PC=0x00000054 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000050 I=0x00378e63 [beq x15,x3,0x1c] alu result=0x00000000 
+  MEM:PC=0x0000004c I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000048 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+260 ns:No Errors
+  IF: PC=0x0000005c
+  ID: PC=0x00000058 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000054 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000050 I=0x00378e63 [beq x15,x3,0x1c] No memory read/write 
+  WB: PC=0x0000004c I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+270 ns:No Errors
+  IF: PC=0x0000006c
+  ID: PC=0x0000005c I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000058 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000054 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000050 I=0x00378e63 [beq x15,x3,0x1c] WriteBackData=0x00000000 
+280 ns:No Errors
+  IF: PC=0x00000070
+  ID: PC=0x0000006c I=0x40000993 [addi x19,x0,0x400]
+  EX: PC=0x0000005c I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000058 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000054 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+290 ns:No Errors
+  IF: PC=0x00000074
+  ID: PC=0x00000070 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x0000006c I=0x40000993 [addi x19,x0,0x400] alu result=0x00000400 
+  MEM:PC=0x0000005c I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000058 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+300 ns:No Errors
+  IF: PC=0x00000078
+  ID: PC=0x00000074 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000070 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x0000006c I=0x40000993 [addi x19,x0,0x400] No memory read/write 
+  WB: PC=0x0000005c I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+310 ns:No Errors
+  IF: PC=0x0000007c
+  ID: PC=0x00000078 I=0x013989b3 [add x19,x19,x19]
+  EX: PC=0x00000074 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000070 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x0000006c I=0x40000993 [addi x19,x0,0x400] WriteBackData=0x00000400 
+320 ns:No Errors
+  IF: PC=0x00000080
+  ID: PC=0x0000007c I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000078 I=0x013989b3 [add x19,x19,x19] alu result=0x00000800 
+  MEM:PC=0x00000074 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000070 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+330 ns:No Errors
+  IF: PC=0x00000084
+  ID: PC=0x00000080 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x0000007c I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000078 I=0x013989b3 [add x19,x19,x19] No memory read/write 
+  WB: PC=0x00000074 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+340 ns:No Errors
+  IF: PC=0x00000088
+  ID: PC=0x00000084 I=0x013989b3 [add x19,x19,x19]
+  EX: PC=0x00000080 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x0000007c I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000078 I=0x013989b3 [add x19,x19,x19] WriteBackData=0x00000800 
+350 ns:No Errors
+  IF: PC=0x0000008c
+  ID: PC=0x00000088 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000084 I=0x013989b3 [add x19,x19,x19] alu result=0x00001000 
+  MEM:PC=0x00000080 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x0000007c I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+360 ns:No Errors
+  IF: PC=0x00000090
+  ID: PC=0x0000008c I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000088 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000084 I=0x013989b3 [add x19,x19,x19] No memory read/write 
+  WB: PC=0x00000080 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+370 ns:No Errors
+  IF: PC=0x00000094
+  ID: PC=0x00000090 I=0x013989b3 [add x19,x19,x19]
+  EX: PC=0x0000008c I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000088 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000084 I=0x013989b3 [add x19,x19,x19] WriteBackData=0x00001000 
+380 ns:No Errors
+  IF: PC=0x00000098
+  ID: PC=0x00000094 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000090 I=0x013989b3 [add x19,x19,x19] alu result=0x00002000 
+  MEM:PC=0x0000008c I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000088 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+390 ns:No Errors
+  IF: PC=0x0000009c
+  ID: PC=0x00000098 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000094 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000090 I=0x013989b3 [add x19,x19,x19] No memory read/write 
+  WB: PC=0x0000008c I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+400 ns:No Errors
+  IF: PC=0x000000a0
+  ID: PC=0x0000009c I=0x04098a13 [addi x20,x19,0x40]
+  EX: PC=0x00000098 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000094 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000090 I=0x013989b3 [add x19,x19,x19] WriteBackData=0x00002000 
+410 ns:No Errors
+  IF: PC=0x000000a4
+  ID: PC=0x000000a0 I=0x0009a483 [lw x9,0x0(x19)]
+  EX: PC=0x0000009c I=0x04098a13 [addi x20,x19,0x40] alu result=0x00002040 
+  MEM:PC=0x00000098 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000094 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+420 ns:No Errors
+  IF: PC=0x000000a8
+  ID: PC=0x000000a4 I=0x0049a503 [lw x10,0x4(x19)]
+  EX: PC=0x000000a0 I=0x0009a483 [lw x9,0x0(x19)] alu result=0x00002000 
+  MEM:PC=0x0000009c I=0x04098a13 [addi x20,x19,0x40] No memory read/write 
+  WB: PC=0x00000098 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+430 ns:No Errors
+  IF: PC=0x000000ac
+  ID: PC=0x000000a8 I=0xff0a2583 [lw x11,0xfffffff0(x20)]
+  EX: PC=0x000000a4 I=0x0049a503 [lw x10,0x4(x19)] alu result=0x00002004 
+  MEM:PC=0x000000a0 I=0x0009a483 [lw x9,0x0(x19)] Memory Read from address 0x2000 
+  WB: PC=0x0000009c I=0x04098a13 [addi x20,x19,0x40] WriteBackData=0x00002040 
+440 ns:No Errors
+  IF: PC=0x000000b0
+  ID: PC=0x000000ac I=0xfeca2603 [lw x12,0xffffffec(x20)]
+  EX: PC=0x000000a8 I=0xff0a2583 [lw x11,0xfffffff0(x20)] alu result=0x00002030 
+  MEM:PC=0x000000a4 I=0x0049a503 [lw x10,0x4(x19)] Memory Read from address 0x2004 
+  WB: PC=0x000000a0 I=0x0009a483 [lw x9,0x0(x19)] WriteBackData=0x11111111 
+450 ns:No Errors
+  IF: PC=0x000000b4
+  ID: PC=0x000000b0 I=0x40950fb3 [sub x31,x10,x9]
+  EX: PC=0x000000ac I=0xfeca2603 [lw x12,0xffffffec(x20)] alu result=0x0000202c 
+  MEM:PC=0x000000a8 I=0xff0a2583 [lw x11,0xfffffff0(x20)] Memory Read from address 0x2030 
+  WB: PC=0x000000a4 I=0x0049a503 [lw x10,0x4(x19)] WriteBackData=0x22222222 
+460 ns:No Errors
+  IF: PC=0x000000b8
+  ID: PC=0x000000b4 I=0x0109a683 [lw x13,0x10(x19)]
+  EX: PC=0x000000b0 I=0x40950fb3 [sub x31,x10,x9] alu result=0x11111111 
+  MEM:PC=0x000000ac I=0xfeca2603 [lw x12,0xffffffec(x20)] Memory Read from address 0x202c 
+  WB: PC=0x000000a8 I=0xff0a2583 [lw x11,0xfffffff0(x20)] WriteBackData=0xcccccccc 
+470 ns:No Errors
+  IF: PC=0x000000bc
+  ID: PC=0x000000b8 I=0x0149a703 [lw x14,0x14(x19)]
+  EX: PC=0x000000b4 I=0x0109a683 [lw x13,0x10(x19)] alu result=0x00002010 
+  MEM:PC=0x000000b0 I=0x40950fb3 [sub x31,x10,x9] No memory read/write 
+  WB: PC=0x000000ac I=0xfeca2603 [lw x12,0xffffffec(x20)] WriteBackData=0xbbbbbbbb 
+480 ns:No Errors
+  IF: PC=0x000000c0
+  ID: PC=0x000000bc I=0x009f8a63 [beq x31,x9,0x14]
+  EX: PC=0x000000b8 I=0x0149a703 [lw x14,0x14(x19)] alu result=0x00002014 
+  MEM:PC=0x000000b4 I=0x0109a683 [lw x13,0x10(x19)] Memory Read from address 0x2010 
+  WB: PC=0x000000b0 I=0x40950fb3 [sub x31,x10,x9] WriteBackData=0x11111111 
+490 ns:No Errors
+  IF: PC=0x000000c4
+  ID: PC=0x000000c0 I=0x00b045b3 [xor x11,x0,x11]
+  EX: PC=0x000000bc I=0x009f8a63 [beq x31,x9,0x14] alu result=0x00000000 
+  MEM:PC=0x000000b8 I=0x0149a703 [lw x14,0x14(x19)] Memory Read from address 0x2014 
+  WB: PC=0x000000b4 I=0x0109a683 [lw x13,0x10(x19)] WriteBackData=0x55555555 
+500 ns:No Errors
+  IF: PC=0x000000c8
+  ID: PC=0x000000c4 I=0x00c04633 [xor x12,x0,x12]
+  EX: PC=0x000000c0 I=0x00b045b3 [xor x11,x0,x11] alu result=0xcccccccc 
+  MEM:PC=0x000000bc I=0x009f8a63 [beq x31,x9,0x14] No memory read/write 
+  WB: PC=0x000000b8 I=0x0149a703 [lw x14,0x14(x19)] WriteBackData=0x66666666 
+510 ns:No Errors
+  IF: PC=0x000000d0
+  ID: PC=0x000000c8 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x000000c4 I=0x00c04633 [xor x12,x0,x12] alu result=0xbbbbbbbb 
+  MEM:PC=0x000000c0 I=0x00b045b3 [xor x11,x0,x11] No memory read/write 
+  WB: PC=0x000000bc I=0x009f8a63 [beq x31,x9,0x14] WriteBackData=0x00000000 
+520 ns:No Errors
+  IF: PC=0x000000d4
+  ID: PC=0x000000d0 I=0x40d70fb3 [sub x31,x14,x13]
+  EX: PC=0x000000c8 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x000000c4 I=0x00c04633 [xor x12,x0,x12] No memory read/write 
+  WB: PC=0x000000c0 I=0x00b045b3 [xor x11,x0,x11] WriteBackData=0xcccccccc 
+530 ns:No Errors
+  IF: PC=0x000000d8
+  ID: PC=0x000000d4 I=0x0189a783 [lw x15,0x18(x19)]
+  EX: PC=0x000000d0 I=0x40d70fb3 [sub x31,x14,x13] alu result=0x11111111 
+  MEM:PC=0x000000c8 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x000000c4 I=0x00c04633 [xor x12,x0,x12] WriteBackData=0xbbbbbbbb 
+540 ns:No Errors
+  IF: PC=0x000000dc
+  ID: PC=0x000000d8 I=0x01c9a803 [lw x16,0x1c(x19)]
+  EX: PC=0x000000d4 I=0x0189a783 [lw x15,0x18(x19)] alu result=0x00002018 
+  MEM:PC=0x000000d0 I=0x40d70fb3 [sub x31,x14,x13] No memory read/write 
+  WB: PC=0x000000c8 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+550 ns:No Errors
+  IF: PC=0x000000e0
+  ID: PC=0x000000dc I=0x009f8a63 [beq x31,x9,0x14]
+  EX: PC=0x000000d8 I=0x01c9a803 [lw x16,0x1c(x19)] alu result=0x0000201c 
+  MEM:PC=0x000000d4 I=0x0189a783 [lw x15,0x18(x19)] Memory Read from address 0x2018 
+  WB: PC=0x000000d0 I=0x40d70fb3 [sub x31,x14,x13] WriteBackData=0x11111111 
+560 ns:No Errors
+  IF: PC=0x000000e4
+  ID: PC=0x000000e0 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x000000dc I=0x009f8a63 [beq x31,x9,0x14] alu result=0x00000000 
+  MEM:PC=0x000000d8 I=0x01c9a803 [lw x16,0x1c(x19)] Memory Read from address 0x201c 
+  WB: PC=0x000000d4 I=0x0189a783 [lw x15,0x18(x19)] WriteBackData=0x77777777 
+570 ns:No Errors
+  IF: PC=0x000000e8
+  ID: PC=0x000000e4 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x000000e0 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x000000dc I=0x009f8a63 [beq x31,x9,0x14] No memory read/write 
+  WB: PC=0x000000d8 I=0x01c9a803 [lw x16,0x1c(x19)] WriteBackData=0xffffffff 
+580 ns:No Errors
+  IF: PC=0x000000f0
+  ID: PC=0x000000e8 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x000000e4 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x000000e0 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x000000dc I=0x009f8a63 [beq x31,x9,0x14] WriteBackData=0x00000000 
+590 ns:No Errors
+  IF: PC=0x000000f4
+  ID: PC=0x000000f0 I=0x0109a023 [sw x16,0x0(x19)]
+  EX: PC=0x000000e8 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x000000e4 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x000000e0 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+600 ns:No Errors
+  IF: PC=0x000000f8
+  ID: PC=0x000000f4 I=0x0009af83 [lw x31,0x0(x19)]
+  EX: PC=0x000000f0 I=0x0109a023 [sw x16,0x0(x19)] alu result=0x00002000 
+  MEM:PC=0x000000e8 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x000000e4 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+610 ns:No Errors
+  IF: PC=0x000000fc
+  ID: PC=0x000000f8 I=0x02a9a023 [sw x10,0x20(x19)]
+  EX: PC=0x000000f4 I=0x0009af83 [lw x31,0x0(x19)] alu result=0x00002000 
+  MEM:PC=0x000000f0 I=0x0109a023 [sw x16,0x0(x19)] Memory Write 0xffffffff to address 0x2000 
+  WB: PC=0x000000e8 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+620 ns:No Errors
+  IF: PC=0x00000100
+  ID: PC=0x000000fc I=0x0209af03 [lw x30,0x20(x19)]
+  EX: PC=0x000000f8 I=0x02a9a023 [sw x10,0x20(x19)] alu result=0x00002020 
+  MEM:PC=0x000000f4 I=0x0009af83 [lw x31,0x0(x19)] Memory Read from address 0x2000 
+  WB: PC=0x000000f0 I=0x0109a023 [sw x16,0x0(x19)] WriteBackData=0x00002000 
+630 ns:No Errors
+  IF: PC=0x00000104
+  ID: PC=0x00000100 I=0x01f80a63 [beq x16,x31,0x14]
+  EX: PC=0x000000fc I=0x0209af03 [lw x30,0x20(x19)] alu result=0x00002020 
+  MEM:PC=0x000000f8 I=0x02a9a023 [sw x10,0x20(x19)] Memory Write 0x22222222 to address 0x2020 
+  WB: PC=0x000000f4 I=0x0009af83 [lw x31,0x0(x19)] WriteBackData=0xffffffff 
+640 ns:No Errors
+  IF: PC=0x00000108
+  ID: PC=0x00000104 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000100 I=0x01f80a63 [beq x16,x31,0x14] alu result=0x00000000 
+  MEM:PC=0x000000fc I=0x0209af03 [lw x30,0x20(x19)] Memory Read from address 0x2020 
+  WB: PC=0x000000f8 I=0x02a9a023 [sw x10,0x20(x19)] WriteBackData=0x00002020 
+650 ns:No Errors
+  IF: PC=0x0000010c
+  ID: PC=0x00000108 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000104 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000100 I=0x01f80a63 [beq x16,x31,0x14] No memory read/write 
+  WB: PC=0x000000fc I=0x0209af03 [lw x30,0x20(x19)] WriteBackData=0x22222222 
+660 ns:No Errors
+  IF: PC=0x00000114
+  ID: PC=0x0000010c I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000108 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000104 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000100 I=0x01f80a63 [beq x16,x31,0x14] WriteBackData=0x00000000 
+670 ns:No Errors
+  IF: PC=0x00000118
+  ID: PC=0x00000114 I=0x01e50863 [beq x10,x30,0x10]
+  EX: PC=0x0000010c I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000108 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000104 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+680 ns:No Errors
+  IF: PC=0x0000011c
+  ID: PC=0x00000118 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000114 I=0x01e50863 [beq x10,x30,0x10] alu result=0x00000000 
+  MEM:PC=0x0000010c I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000108 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+690 ns:No Errors
+  IF: PC=0x00000120
+  ID: PC=0x0000011c I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000118 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000114 I=0x01e50863 [beq x10,x30,0x10] No memory read/write 
+  WB: PC=0x0000010c I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+700 ns:No Errors
+  IF: PC=0x00000124
+  ID: PC=0x00000120 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x0000011c I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000118 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000114 I=0x01e50863 [beq x10,x30,0x10] WriteBackData=0x00000000 
+710 ns:No Errors
+  IF: PC=0x00000128
+  ID: PC=0x00000124 I=0xfeba2623 [sw x11,0xffffffec(x20)]
+  EX: PC=0x00000120 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x0000011c I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000118 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+720 ns:No Errors
+  IF: PC=0x0000012c
+  ID: PC=0x00000128 I=0xfeca2f83 [lw x31,0xffffffec(x20)]
+  EX: PC=0x00000124 I=0xfeba2623 [sw x11,0xffffffec(x20)] alu result=0x0000202c 
+  MEM:PC=0x00000120 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x0000011c I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+730 ns:No Errors
+  IF: PC=0x00000130
+  ID: PC=0x0000012c I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000128 I=0xfeca2f83 [lw x31,0xffffffec(x20)] alu result=0x0000202c 
+  MEM:PC=0x00000124 I=0xfeba2623 [sw x11,0xffffffec(x20)] Memory Write 0xcccccccc to address 0x202c 
+  WB: PC=0x00000120 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+740 ns:No Errors
+  IF: PC=0x00000134
+  ID: PC=0x00000130 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x0000012c I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000128 I=0xfeca2f83 [lw x31,0xffffffec(x20)] Memory Read from address 0x202c 
+  WB: PC=0x00000124 I=0xfeba2623 [sw x11,0xffffffec(x20)] WriteBackData=0x0000202c 
+750 ns:No Errors
+  IF: PC=0x00000138
+  ID: PC=0x00000134 I=0x03f58063 [beq x11,x31,0x20]
+  EX: PC=0x00000130 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x0000012c I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000128 I=0xfeca2f83 [lw x31,0xffffffec(x20)] WriteBackData=0xcccccccc 
+760 ns:No Errors
+  IF: PC=0x0000013c
+  ID: PC=0x00000138 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000134 I=0x03f58063 [beq x11,x31,0x20] alu result=0x00000000 
+  MEM:PC=0x00000130 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x0000012c I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+770 ns:No Errors
+  IF: PC=0x00000140
+  ID: PC=0x0000013c I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x00000138 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000134 I=0x03f58063 [beq x11,x31,0x20] No memory read/write 
+  WB: PC=0x00000130 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+780 ns:No Errors
+  IF: PC=0x00000154
+  ID: PC=0x00000140 I=0x00000013 [addi x0,x0,0x0]
+  EX: PC=0x0000013c I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x00000138 I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000134 I=0x03f58063 [beq x11,x31,0x20] WriteBackData=0x00000000 
+790 ns:No Errors
+  IF: PC=0x00000158
+  ID: PC=0x00000154 I=0x00100073 [N/A]
+  EX: PC=0x00000140 I=0x00000013 [addi x0,x0,0x0] alu result=0x00000000 
+  MEM:PC=0x0000013c I=0x00000013 [addi x0,x0,0x0] No memory read/write 
+  WB: PC=0x00000138 I=0x00000013 [addi x0,x0,0x0] WriteBackData=0x00000000 
+You Passed!
+$finish called at time : 795 ns : File "J:/ECEN 323 Labs/project_8/riscv_pipeline_tb.v" Line 156
